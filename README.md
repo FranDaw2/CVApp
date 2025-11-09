@@ -1,7 +1,7 @@
 # CVApp – Es una aplicación web para gestionar los currículums de los alumnos con un proyecto que hemos realizado en Laravel
 
 El proyecto se ha desarrollado con **Laravel** como práctica del módulo **Desarrollo Web en Entorno Servidor**.  
-Se de crear una aplicación que recoja todos los métodos CRUD que nos va permitir realizar las acciones típicas de una aplicación web para cv **crear, visualizar, editar y eliminar** currículums. En las clases finales aprendimos tambien a incluir la **subida y gestión de imágenes**.
+Se trata de crear una aplicación que recoja todos los métodos CRUD que nos va permitir realizar las acciones típicas de una aplicación web para cv **crear, visualizar, editar y eliminar** currículums. En las clases finales aprendimos tambien a incluir la **subida y gestión de imágenes**.
 
 ---
 
@@ -25,7 +25,7 @@ DB_DATABASE=cvapp
 DB_USERNAME=root
 DB_PASSWORD=root
 
-La BD se cre desde phpMyAdmin igual que en clases.
+La BD se creó desde phpMyAdmin igual que en clases con usuario root y contraseña root en mysql.
 ```      
 ## Migraciones y modelos
 Se crearon las migraciones y modelos necesarios para la aplicación utilizando los siguientes comandos:
@@ -37,12 +37,16 @@ El arhcivo create_alumnos define la tabla alumnos con su id, nombre, apellidos..
 ``
 ## Archivos y carpetas principales
 
-app/Models/Alumno.php: Modelo del alumno.
-app/Http/Controllers/AlumnoController.php: Controlador para gestionar las operaciones CRUD.
-resources/views/: Carpeta que contiene las vistas Blade para la interfaz de usuario.    
-routes/web.php: Archivo de rutas para definir las URL de la aplicación.
-public/storage/: Carpeta para almacenar las imágenes subidas por los usuarios.
-routes/web.php: Archivo de rutas para definir las URL de la aplicación.
+
+app/Http/Controllers/**AlumnoController.php**: Controlador para gestionar las operaciones CRUD.
+app/Models/**Alumno.php**: Modelo del alumno.
+public/assets/css/**style.css**: Carperta  para los estilos CSS personalizados.
+public/assets/js/**main.js**: Carpeta para los scripts JavaScript personalizados.
+resources/views/alumnos/**create.blade.php**; **edit.blade.php**; **index.blade.php** y **show.blade.php**: Carpeta que contiene las vistas Bladara la interfaz de usuario.    
+resources/views/main/**index.blade.php**: Plantilla principal que muestra la lista de alumnos.
+resources/views/template/**base.blade.php**: Plantilla base para la aplicación.
+routes/**web.php**: Archivo de rutas para definir las URL de la aplicación.
+
 
 ## Funcionalidades
 - Crear, visualizar, editar y eliminar currículums de alumnos.
