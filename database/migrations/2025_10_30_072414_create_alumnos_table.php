@@ -8,12 +8,12 @@ return new class extends Migration {
     public function up(): void {
         Schema::create('alumnos', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre', 100);
+            $table->string('nombre', 100); 
             $table->string('apellidos', 150);
             $table->string('telefono', 30)->nullable();
             $table->string('correo', 150);
             $table->date('fecha_nacimiento')->nullable();
-            $table->decimal('nota_media', 3, 2)->nullable(); // 0.00 - 10.00
+            $table->decimal('nota_media', 3, 2)->nullable(); 
             $table->text('experiencia')->nullable();
             $table->text('formacion')->nullable();
             $table->text('habilidades')->nullable();
